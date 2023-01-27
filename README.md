@@ -1,108 +1,112 @@
 
+<p align="center">
+ <img width="30%" height="30%" src="https://user-images.githubusercontent.com/39133101/215219545-978e5749-c628-4cae-8fe0-9f23fdac417a.png">
+</p>
 
-# Título del Proyecto
+<em><h1 align="center"> Hola "FastAPI" Mundo </h1></em>
 
-_Acá va un párrafo que describa lo que es el proyecto_
+<p align="center">
+ <img src="https://img.shields.io/badge/Versi%C3%B3n-v1.0-green">
+</p>
+
+_Backend con PY y FastAPI._
 
 ## Comenzando 🚀
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-Mira **Deployment** para conocer como desplegar el proyecto.
-
 
 ### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+_Para inicializar correctamente el proyecto, debes tener instalado lo siguiente:_
+
+### virtualenv <p align="left"><img src="https://img.shields.io/badge/Virtualenv-v20.17.1-green"></p>
+
+Es una herramienta para crear entornos virtuales aislados en Python.
+
+Se instala con el siguiente comando:
+```
+pip install virtualenv
+```
+_virtualenv funciona con las siguientes implementaciones de intérpretes de Python:_
+
+* CPython versions 3.7, 3.8, 3.9, 3.10, 3.11, 3.12
+
+* PyPy 3.7, 3.8, 3.9
+
+### FastAPI <p align="left"><img src="https://img.shields.io/badge/Fastapi-v0.89.1-green"></p>
+
+FastAPI es un marco web moderno, rápido (de alto rendimiento) para crear API con Python 3.7+ basado en sugerencias de tipo estándar de Python.
+
+Se instala con el siguiente comando:
 
 ```
-Da un ejemplo
+pip instalar fastapi
+```
+### Uvicorn <p align="left"><img src="https://img.shields.io/badge/Uvicorn-v0.20.0-green"></p>
+
+Uvicorn es una implementación de servidor web ASGI para Python.
+
+Hasta hace poco, Python carecía de una interfaz mínima de servidor/aplicación de bajo nivel para marcos asíncronos. La especificación ASGI llena este vacío y significa que ahora podemos comenzar a crear un conjunto común de herramientas utilizables en todos los marcos asíncronos.
+
+Uvicorn actualmente es compatible con HTTP/1.1 y WebSockets.
+
+Se instala con el siguiente comando:
+
+```
+$ pip install uvicorn
 ```
 
 ### Instalación 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+_Una una vez se ralicen las instalaciones anteriores, se procede a clonar o descargar el repositorio._
 
-_Dí cómo será ese paso_
-
-```
-Da un ejemplo
-```
-
-_Y repite_
+_Después de abierto el repositorio, se procede a la crear un repositorio, el siguiente comando es utilziado para ello:_
 
 ```
-hasta finalizar
+virtualenv namevenv       
 ```
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
-
-## Ejecutando las pruebas ⚙️
-
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
+_Después de creado, se procede a activar el entorno virtual, el siguiente comando es utilizado para ello:_
 
 ```
-Da un ejemplo
+source venv/bin/activate
+```
+o
+```
+venv\Scripts\activate.bat
 ```
 
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
+_Para desactivar el entorno virtual, el siguiente comando es utilizado para ello:_
 
 ```
-Da un ejemplo
+deactivate
 ```
 
-## Despliegue 📦
+_Una vez activado el entorno virtual de desarrollo, en el enlace de la ruta de archivos debe aparecer el nombre del entorno virtual entre paréntesis:_
 
-_Agrega notas adicionales sobre como hacer deploy_
+```
+(venv) PS C:\Users\venv\main.py>
+```
+
+_Una vez verificado el paso anterior, se debe escribir el siguiente comando en la consola:_
+
+```
+uvicorn main:app --reload
+```
+
+_Allí ya podrá ver en el siguiente enlace, el funcionamiento de FastApi:_
+
+```
+http://127.0.0.1:8000
+```
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
-
-## Contribuyendo 🖇️
-
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-## Wiki 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
+* [FastAPI](https://fastapi.tiangolo.com/)
+* [Venv](https://docs.python.org/3/library/venv.html#module-venv)
+* [Uvicorn](https://www.uvicorn.org/)
 
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
-
-## Licencia 📄
-
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
-## Expresiones de Gratitud 🎁
-
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* Dona con cripto a esta dirección: `0xf253fc233333078436d111175e5a76a649890000`
-* etc.
-
-
-
----
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
+* **Andrés Rodríguez** - *Educamas*
